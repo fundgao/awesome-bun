@@ -1,15 +1,22 @@
 # Elysia with Bun runtime
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+- Development
 ```bash
-bun create elysia ./elysia-example
+bun dev
 ```
 
-## Development
-To start the development server run:
+- Build
 ```bash
-bun run dev
+bun build
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+## 构建镜像
+`podman build -t my-elysia-app .`
+
+## 运行容器
+`podman run -d -p 3000:3000 my-elysia-app`
+
+## Doc
+- **Bun** https://bun.com/
+- **Elysia** https://elysiajs.com/quick-start.html
+- **Podman** https://podman.io/
