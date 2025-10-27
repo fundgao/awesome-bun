@@ -1,0 +1,2 @@
+# awesome-bun
+Bun
